@@ -1,0 +1,69 @@
+input{
+    font-size: large;
+    height: 40px;
+    margin-left: 50px;
+}
+form.example input[type=text] {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: x-large;
+    border: 3px solid black;
+    float: left;
+    width: 800px;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    margin-top: 10px;
+    float: left;
+    width:85px;
+    height: 66px;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: x-large;
+  border: 3px solid black;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  h1{
+    font-size: 50px;
+    text-align: center;
+}
+div {
+    text-align: center;
+    background-color: white;
+    width: 80%;
+    border: 3px solid black;
+    margin-top: 20px;
+    margin-left: 10%;
+    font-size: x-large;
+    height: 650px;
+}
+#Apply{
+    height: 45px;
+    font-size: large;
+    width: 100px;
+    margin-left: 20px;
+}
+#delete{
+    height: 60px;
+    font-size: larger;
+    width: 250px;
+    margin-left: 50px;
+    background-color: red;
+    color: yellow;
+}
