@@ -1,5 +1,6 @@
 var waiting = true
-var db = ''
+var db = {"books": []}
+loadData()
 
 // Load the JSON file
 function loadData(){
@@ -30,5 +31,20 @@ function saveData(){
             console.log("Data Saved")
         }
     }
-    xhr.send(db);
+    xhr.send(JSON.stringify(db));
+}
+function addBook(){
+    console.log("Book added")
+    var name = document.getElementById("name").value;
+    var author = document.getElementById("author").value;
+    var isbn = document.getElementById("isbn").value;
+    var desc = document.getElementById("desc").value;
+    newBook = {
+        "name" : name,
+        "author" : author,
+        "isbn" : isbn,
+        "desc" : desc
+    }
+    db.books.push(newBook)
+    saveData()
 }
