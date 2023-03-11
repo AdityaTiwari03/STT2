@@ -1,46 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="project.css">
-        <meta name="description" content="Library Books">
-        <title>Library</title>
-    </head>
-    <body background="C:\Users\DHRUV SAINI\Desktop\Downloads\books.jpg" link="#00000" alink="017bf5" vlink="#FFFFFF">
-        <header>
-            <h3 align="center">
-                <font face="Lato" size="6">LIBRARY</font>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <font face="cinzel">
-                    <a href="#">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#">DELETE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#">ADD</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#">SEARCH</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#">ABOUT US</a>
-                </font>
-            </h3>
-            <label name="Genres">Choose Genre:</label>
-            <select name=""Genre" id="Genre" alignment="right;">
-                <option value="--SELECT">--SELECT</option>
-                <option value="Fiction">Fiction</option>
-                <option value="Mystery">Mystery</option>
-                <option value="Horror">Horror</option>
-                <option value="Humor">Humor</option>
-                <option value="Thriller">Thriller</option>
-                <option value="Romance">Romance</option>
-            </select>
-        </header>
-        <main>
-            <div class="topnav">
-                <input type="text" placeholder="Search..">
-              </div>
-        </main>
+  <head>
+    <meta charset="UTF-8">
+    <title>Personal Library</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Your Own Personal Library</h1>
+    </header>
+    <main>
+      <p> Find Your Book </p>
+      <div class="search-container">  
+        <input type="text" placeholder="Search..." class="text">
+        <button>Search</button>
+      </div> <br>
 
-        
-    </body>
+      <nav>
+          <button class="button-64" role="button" onclick="window.location.href = 'add.html';"><span class="text">Add Books</span></button> <br> <br>
+          <button class="button-64" role="button" onclick="window.location.href = 'edit.html';"><span class="text">Edit Books</span></button><br> <br>
+          <button class="button-64" role="button"><span class="text">Button 64</span></button>
+      
+      </nav>  </body>
 </html>
