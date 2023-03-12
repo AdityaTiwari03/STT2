@@ -3,16 +3,17 @@ body {
   color: #FFFFFF;
   margin: 0;
   padding: 0;
-  background-image: url(pngtree-the-background-photography-of-the-empty-library-bookstore-indoors-image_785539.jpg);
+  background-image: url(library.jpg);
   width: 100%;
   height: 100%;
   background-size: cover;
+  background-attachment: fixed;
 }
 p{
   font-size: 60px;
 }
 header {
-  background-color: #333;
+  background-color: rgba(50, 50, 50, 0.9);
   color: white;
   padding: 20px;
   text-align: center;
@@ -20,7 +21,7 @@ header {
 
 h1 {
   margin: 0;
-  font-size: 100px;
+  font-size: 80px;
 }
 
 nav {
@@ -30,7 +31,7 @@ nav {
 
 main {
   text-align: center;
-  padding: 20px;
+  padding: 2vw;
 }
 
 .search-container {
@@ -110,4 +111,39 @@ button:hover {
     font-size: 24px;
     min-width: 196px;
   }
+}
+
+.list-book-tile{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  min-height: 10vw;
+  background-color: rgba(50, 50, 50, 0.9);
+  margin: 1vw;
+  padding: 5px;
+  padding-left: 20px;
+  border-radius: 15px;
+}
+.list-book-header{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 85vw;
+  padding: 5px;
+  padding-left: 20px;
+  border-radius: 15px;
+}
+.list-book-title{
+  font-size: xxx-large;
+  font-weight: 500;
+  font-family: cursive;
+}
+.list-book-author{
+  font-size: x-large;
+  font-weight: 700;
+  font-family: cursive;
+}
+.list-book-description{
+  text-align: left;
 }

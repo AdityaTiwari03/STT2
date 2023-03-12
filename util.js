@@ -38,13 +38,48 @@ function addBook(){
     var name = document.getElementById("name").value;
     var author = document.getElementById("author").value;
     var isbn = document.getElementById("isbn").value;
-    var desc = document.getElementById("desc").value;
+    var description = document.getElementById("description").value;
     newBook = {
         "name" : name,
         "author" : author,
         "isbn" : isbn,
-        "desc" : desc
+        "description" : description
     }
     db.books.push(newBook)
     saveData()
+}
+function search(){
+    console.log("Search function called")
+    // Change page mode
+    // Remove title text and replace it with search box
+    titleContainer = document.getElementsByTagName("header")[0]
+    titleContainer.children[0].style.display = "none"
+
+    searchContainer = document.getElementsByClassName("search-container")[0]
+    titleContainer.appendChild(searchContainer)
+
+    mainContainer = document.getElementById("content")
+    mainContainer = document.getElementById("content")
+    mainContainer.innerHTML = `
+      <div id="bookList">
+      </div>
+        `
+    // Filter books
+    filteredBooks = db.books
+
+    bookList = document.getElementById("bookList")
+    for(var i = 0; i < filteredBooks.length; i++){
+        var bookDetails = filteredBooks[i]
+        var bookElement = document.createElement('div')
+        bookElement.innerHTML = `
+            <div class="list-book-tile" onclick="editDetails(`+i+`)">
+                <div class="list-book-header">
+                    <div class="list-book-title">`+bookDetails.name+`</div>
+                    <div class="list-book-author">`+bookDetails.author+`</div>
+                </div>
+                <div class="list-book-description">`+bookDetails.description+`</div>
+            </div>
+        `
+        bookList.appendChild(bookElement)
+    }
 }
