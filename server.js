@@ -56,7 +56,7 @@ const server = http.createServer((req, res) => {
                 res.end(data);
             } else {
                 res.writeHead(302, {
-                  'Location': '/Homepage.html'
+                  'Location': '/index.html'
                 });
                 res.end();
             }
