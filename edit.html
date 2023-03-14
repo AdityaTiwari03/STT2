@@ -5,7 +5,7 @@
 	<title>Edit Books</title>
     <!-- Load icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<script src="edit.js"></script>
 <!-- The form -->
 </head>
 <body>
@@ -14,10 +14,10 @@
         <input type="text" placeholder="Search.." name="search">
         <button type="submit"><i class="fa fa-search"></i></button>
       </form>
-      <div> <h2>Name: <input value = "Select Book"><button id = "Apply"> Apply </button></h2><br>
-            <h2> Author: <input value = "Select Book"><button id = "Apply"> Apply </button></h2><br>
-            <h2> ISBN: <input value = "Select Book"><button id = "Apply"> Apply </button></h2><br>
-            <h2> Description: <input value = "Select Book"><button id = "Apply"> Apply </button></h2><br>
+      <div> <h2>Name: <input value = "Select Book" id = "namef"><button id = "Applyname" onclick="naam"> Apply </button></h2><br>
+            <h2> Author: <input value = "Select Book" id = "authorf"><button id = "Applyauthor"> Apply </button></h2><br>
+            <h2> ISBN: <input value = "Select Book" id = "isbn"><button id = "Applyisbn"> Apply </button></h2><br>
+            <h2> Description: <input value = "Select Book" id = "des"><button id = "Applydes"> Apply </button></h2><br>
             <button id = "delete"> Remove Book </button>
       </div>
               </body>
