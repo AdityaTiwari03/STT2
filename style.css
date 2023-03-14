@@ -3,7 +3,7 @@ body {
   color: #FFFFFF;
   margin: 0;
   padding: 0;
-  background-image: url(library.jpg);
+  background-image: url(download.jpeg);
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -50,18 +50,17 @@ input[type="text"] {
   font-size: 40px;
 }
 
-button {
+.button {
   background-color: yellow;
   color: white;
   border: none;
   padding: 10px;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
-  width: 15%;
   font-size: 40px;
 }
 
-button:hover {
+.button:hover {
   background-color: #3e8e41;
 }
 
@@ -124,6 +123,12 @@ button:hover {
   padding: 5px;
   padding-left: 20px;
   border-radius: 15px;
+  color: white
+}
+a:link{
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit; 
 }
 .list-book-header{
   display: flex;
@@ -137,7 +142,7 @@ button:hover {
 .list-book-title{
   font-size: xxx-large;
   font-weight: 500;
-  font-family: cursive;
+  font-family: cursive !important;
 }
 .list-book-author{
   font-size: x-large;
@@ -146,4 +151,21 @@ button:hover {
 }
 .list-book-description{
   text-align: left;
+}
+
+.buttonsearch1{
+  /* background-color: yellow; */
+  color: gray;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 10px; }
+.buttonsearch1:hover{
+  background-color: green;
+  color: yellow;
+}
+.buttonsearch2:hover{
+  background-color: green; 
+  color: yellow;
 }
