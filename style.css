@@ -13,15 +13,25 @@ p{
   font-size: 60px;
 }
 header {
+  display: flex;
+  justify-content: space-between;
   background-color: rgba(50, 50, 50, 0.9);
   color: white;
   padding: 20px;
+  align-items: center;
   text-align: center;
 }
-
+.logo-box{
+    padding: 0 0 0 1.5vw;
+}
+.logo{
+    min-height: 40px;
+    height: 6vw;
+    border-radius: 50%;
+}
 h1 {
   margin: 0;
-  font-size: 80px;
+  font-size: 50px;
 }
 
 nav {
@@ -51,7 +61,7 @@ input[type="text"] {
 }
 
 .button {
-  background-color: yellow;
+  background-color: blue;
   color: white;
   border: none;
   padding: 10px;
