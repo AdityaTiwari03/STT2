@@ -55,9 +55,10 @@ const server = http.createServer((req, res) => {
                 res.writeHead(200);
                 res.end(data);
             } else {
-                console.log(error);
-                res.writeHead(404);
-                res.end('404 - File Not Found');
+                res.writeHead(302, {
+                  'Location': '/index.html'
+                });
+                res.end();
             }
         });
     }
