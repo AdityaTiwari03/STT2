@@ -50,7 +50,7 @@ input[type="text"] {
   font-size: 40px;
 }
 
-button {
+.button {
   background-color: yellow;
   color: white;
   border: none;
@@ -60,7 +60,7 @@ button {
   font-size: 40px;
 }
 
-button:hover {
+.button:hover {
   background-color: #3e8e41;
 }
 
@@ -123,6 +123,12 @@ button:hover {
   padding: 5px;
   padding-left: 20px;
   border-radius: 15px;
+  color: white
+}
+a:link{
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit; 
 }
 .list-book-header{
   display: flex;
@@ -136,7 +142,7 @@ button:hover {
 .list-book-title{
   font-size: xxx-large;
   font-weight: 500;
-  font-family: cursive;
+  font-family: cursive !important;
 }
 .list-book-author{
   font-size: x-large;
@@ -145,4 +151,25 @@ button:hover {
 }
 .list-book-description{
   text-align: left;
+}
+
+.buttonsearch1{
+  background-color: yellow;
+  color: white;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  font-size: 10px;
+}
+.buttonsearch2{
+  background-color: yellow;
+  color: white;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  align-self: right;
+  margin-right: 300px;
+}
+.buttonsearch1 , .buttonsearch2:hover{
+  background-color: green; 
 }

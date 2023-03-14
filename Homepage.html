@@ -5,13 +5,6 @@
     <title>Personal Library</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="util.js"></script>
-    <script>
-    // function editDetails(i) {
-    //   localStorage.setItem("value" , i)
-    //   window.location.href = "edit.html";
-    //   // document.getElementById("naam").value = i;
-    // }
-    </script>
   </head>
   <body>
     <header>
@@ -21,7 +14,7 @@
       <p> Find Your Book </p>
       <div class="search-container">  
         <input type="text" placeholder="Search..." class="text search-box">
-        <button onclick="search()">Search</button>
+        <button class = "button" onclick="search()">Search</button>
       </div> <br>
       <div id="bookList">
         <div class="book-entry" id="book-template">
