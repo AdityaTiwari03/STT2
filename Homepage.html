@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <title>Personal Library</title>
     <link rel="stylesheet" href="style.css">
-  
+    <script type="text/javascript" src="util.js"></script>
   </head>
   <body>
     <header>
-      <h1>Your Own Personal Library</h1>
+            <div class="logo-box">
+                <img src="./logo.png" alt="logo" class="logo">
+            </div>
+            <div>
+              <h1>The Library</h1>
+            </div>
+            <div> </div>
     </header>
-    <main>
-      <p> Find Your Book </p>
+    <main id="content">
       <div class="search-container">  
-        <input type="text" placeholder="Search..." class="text">
-        <button>Search</button>
+        <input type="text" placeholder="Search books ..." class="text search-box">
+        <button onclick="search()">Search</button>
       </div> <br>
-
-      <nav>
-          <button class="button-64" role="button" onclick="window.location.href = 'add.html';"><span class="text">Add Books</span></button> <br> <br>
-          <button class="button-64" role="button" onclick="window.location.href = 'edit.html';"><span class="text">Edit Books</span></button><br> <br>
-          <button class="button-64" role="button"><span class="text">Delete Books</span></button>
-      
-      </nav>  </body>
+      <div id="bookList">
+        <div class="book-entry" id="book-template">
+        </div>
+      </div>
+      <nav id="nav-btns">
+        <button class="button-64" role="button" onclick="window.location.href = 'add.html';"><span class="text">Add Books</span></button> <br> <br>
+      </nav>
+    </main>
+  </body>
 </html>
