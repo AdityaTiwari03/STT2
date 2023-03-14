@@ -64,8 +64,28 @@ function search(){
       <div id="bookList">
       </div>
         `
+    // Get the search string
+    searchTerm = document.getElementsByClassName("search-box")[0].value
+    console.log(searchTerm)
+
     // Filter books
-    filteredBooks = db.books
+    filteredBooks = []
+    secondPass = []
+    for(var i = 0; i < db.books.length; i++){
+        console.log(db.books[i])
+        if(db.books[i].name.search(searchTerm) != -1){
+            filteredBooks.push(db.books[i])
+        }
+        else{
+            secondPass.push(db.books[i])
+        }
+    }
+    for(var i = 0; i < secondPass.length; i++){
+        console.log(secondPass[i])
+        if(secondPass[i].author.search(searchTerm) != -1 || secondPass[i].description.search(searchTerm) != -1){
+            filteredBooks.push(secondPass[i])
+        }
+    }
 
     bookList = document.getElementById("bookList")
     for(var i = 0; i < filteredBooks.length; i++){
