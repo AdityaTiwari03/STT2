@@ -64,8 +64,18 @@ function search(){
       <div id="bookList">
       </div>
         `
+    // Get the search string
+    searchTerm = document.getElementsByClassName("search-box")[0].value
+    console.log(searchTerm)
+
     // Filter books
-    filteredBooks = db.books
+    filteredBooks = []
+    for(var i = 0; i < db.books.length; i++){
+        console.log(db.books[i])
+        if(db.books[i].name.search(searchTerm) != -1){
+            filteredBooks.push(db.books[i])
+        }
+    }
 
     bookList = document.getElementById("bookList")
     for(var i = 0; i < filteredBooks.length; i++){
