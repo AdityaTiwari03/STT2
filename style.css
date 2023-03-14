@@ -154,22 +154,18 @@ a:link{
 }
 
 .buttonsearch1{
-  background-color: yellow;
-  color: white;
+  /* background-color: yellow; */
+  color: gray;
   border: none;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 15px;
+  margin-top: 10px; }
+.buttonsearch1:hover{
+  background-color: green;
+  color: yellow;
 }
-.buttonsearch2{
-  background-color: yellow;
-  color: white;
-  border: none;
-  border-radius: 0 3px 3px 0;
-  cursor: pointer;
-  align-self: right;
-  margin-right: 300px;
-}
-.buttonsearch1 , .buttonsearch2:hover{
+.buttonsearch2:hover{
   background-color: green; 
+  color: yellow;
 }
