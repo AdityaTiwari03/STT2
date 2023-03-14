@@ -1,4 +1,4 @@
-var waiting = true
+var loaded = false
 var db = {"books": []}
 loadData()
 
@@ -12,7 +12,7 @@ function loadData(){
             let data = JSON.parse(xhr.responseText);
             console.log(data)
             db = data
-            waiting = false
+            loaded = true
         }
     };
     xhr.send();
@@ -82,14 +82,41 @@ function search(){
         var bookDetails = filteredBooks[i]
         var bookElement = document.createElement('div')
         bookElement.innerHTML = `
-            <div class="list-book-tile" onclick="editDetails(`+i+`)">
+        <a href="/edit.html?book_id=`+bookDetails.name+`">
+            <div class="list-book-tile" >
                 <div class="list-book-header">
                     <div class="list-book-title">`+bookDetails.name+`</div>
                     <div class="list-book-author">`+bookDetails.author+`</div>
                 </div>
-                <div class="list-book-description">`+bookDetails.description+`</div>
+                <div class="list-book-description">`+bookDetails.description+`
+                <button class = "h"> Edit </button>
+                </div>
             </div>
+        </a>
         `
         bookList.appendChild(bookElement)
     }
+}
+
+async function getBook(name){
+    while(!loaded){
+        await sleep(i * 1000);
+    }
+    for(var i = 0; i < db.books.length; i++){
+        if (db.books[i].name == name){
+            return db.books[i]
+        }
+    }
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function demo() {
+    for (let i = 0; i < 5; i++) {
+        console.log(`Waiting ${i} seconds...`);
+        await sleep(i * 1000);
+    }
+    console.log('Done');
 }

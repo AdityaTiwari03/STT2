@@ -5,6 +5,13 @@
     <title>Personal Library</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="util.js"></script>
+    <script>
+    // function editDetails(i) {
+    //   localStorage.setItem("value" , i)
+    //   window.location.href = "edit.html";
+    //   // document.getElementById("naam").value = i;
+    // }
+    </script>
   </head>
   <body>
     <header>
@@ -18,11 +25,11 @@
       </div> <br>
       <div id="bookList">
         <div class="book-entry" id="book-template">
-        </div>
-      </div>
+          <div class = "button"> </div>
+        </div>      </div>
       <nav id="nav-btns">
         <button class="button-64" role="button" onclick="window.location.href = 'add.html';"><span class="text">Add Books</span></button> <br> <br>
-        <button class="button-64" role="button" onclick="window.location.href = 'edit.html';"><span class="text">Edit Books</span></button><br> <br>
+        <button class="button-64" role="button"><span class="text">Edit Books</span></button><br> <br>
         <button class="button-64" role="button"><span class="text">Button 64</span></button>
       </nav>
     </main>
