@@ -47,6 +47,7 @@ function addBook(){
     }
     db.books.push(newBook)
     saveData()
+    window.open("index.html")
 }
 function search(){
     console.log("Search function called")
@@ -128,6 +129,7 @@ function deleteBook(name){
     }
     db.books = newBookList
     saveData()
+    window.open("index")
 }
 
 function sleep(ms) {
