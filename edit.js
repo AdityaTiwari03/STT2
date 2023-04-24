@@ -3,6 +3,7 @@ var myBook = {}
 window.onload = function(){
     if((window.location.href).indexOf('?') != -1) {
         bookID = window.location.href.substring(window.location.href.indexOf("=")+1)
+        bookID = decodeURI(bookID)
     }
     fillData()
 }
