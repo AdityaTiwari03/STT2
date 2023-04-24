@@ -1,4 +1,3 @@
-imp
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,11 +12,13 @@ imp
     <h1> EDIT BOOKS </h1> <br>
     <form class="example" action="action_page.php">
             </form>
-      <div> <h2>Name: <input value = "Select Book" id = "naam"><button id = "Apply" onclick = "applyname()"> Apply </button></h2><br>
-            <h2> Author: <input value = "Select Book" id = "author"><button id = "Apply" onclick="applyauthor()"> Apply </button></h2><br>
-            <h2> ISBN: <input value = "Select Book" id = "isbn"><button id = "Apply" onclick="applyisbn()"> Apply </button></h2><br>
-            <h2> Description: <input value = "Select Book" id = "des"><button id = "Apply" onclick="applydes()"> Apply </button></h2><br>
-            <button id = "Done" onclick="window.location.href = 'Homepage.html'"> Done </button>
+      <div> <h2>Name: <input value = "Select Book" id = "naam"><button id = "apply" onclick = "applyname()"> Apply </button></h2><br>
+            <h2> Author: <input value = "Select Book" id = "author"><button id = "apply" onclick="applyauthor()"> Apply </button></h2><br>
+            <h2> ISBN: <input value = "Select Book" id = "isbn"><button id = "apply" onclick="applyisbn()"> Apply </button></h2><br>
+            <h2> Description:
+              <textarea placeholder="Description" value="Select Book" rows="5" cols="40" id="des" class="des"></textarea>
+              <button id = "apply" onclick="applydes()"> Apply </button></h2><br>
+            <button id="done" onclick="window.location.href = 'Homepage.html'"> Done </button>
       </div>
               </body>
 </html>

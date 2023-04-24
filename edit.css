@@ -53,7 +53,7 @@ div {
     font-size: x-large;
     height: 650px;
 }
-#Apply{
+#apply,#done{
     height: 45px;
     font-size: large;
     width: 100px;

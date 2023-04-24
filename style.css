@@ -164,16 +164,15 @@ a:link{
 }
 
 .buttonsearch1{
-  /* background-color: yellow; */
-  color: gray;
+  background-color: rgba(0, 0, 0, 0);
+  color: #d69a9a;
   border: none;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
   font-size: 15px;
   margin-top: 10px; }
 .buttonsearch1:hover{
-  background-color: green;
-  color: yellow;
+  color: gray;
 }
 .buttonsearch2:hover{
   background-color: green; 
