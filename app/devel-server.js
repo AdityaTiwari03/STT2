@@ -44,9 +44,9 @@ const server = http.createServer((req, res) => {
     }
 
     else if(req.method === 'GET') {
-        console.log("DEBUG :: GET request received.");
         const parsedUrl = url.parse(req.url, true);
         let pathName = parsedUrl.pathname;
+        console.log("DEBUG :: GET request received: " + pathName);
 
         const baseDir = __dirname;
         const resContentType = getContentType(pathName);

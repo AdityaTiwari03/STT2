@@ -1,0 +1,10 @@
+services:
+  library:
+    image: sbdaule5/library:0.0.3
+    container_name: library
+    command: node devel-server.js
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./app:/app

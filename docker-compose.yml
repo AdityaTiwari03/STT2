@@ -1,0 +1,7 @@
+services:
+  library:
+    image: sbdaule5/library:0.0.3
+    container_name: library
+    build: .
+    ports:
+      - "3000:3000"
